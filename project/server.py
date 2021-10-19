@@ -11,7 +11,7 @@ app.config.update(
 )
 celery = make_celery(app)
 
-@celery.task()
+@celery.task
 def create_order(data):
     with open('offers.json', 'r') as f:
         offers = json.load(f)

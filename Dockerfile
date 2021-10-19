@@ -38,3 +38,5 @@ ENV APP_HOME /usr/src/app
 WORKDIR /$APP_HOME
 
 COPY ./project $APP_HOME/
+
+EXPOSE 5000
